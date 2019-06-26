@@ -1,0 +1,14 @@
+{
+  "name": "ニコニコ動画 将棋盤並び替え拡張",
+  "description": "ニコニコ動画 カスタムランキング（将棋盤）を並び替え可能にする拡張機能です。",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["https://www.nicovideo.jp/ranking", "https://www.nicovideo.jp/ranking?*"],
+    "js": ["jquery-2.2.0.min.js", "ChEx.js", "content_script.js"]
+  }],
+  "permissions": [
+    "https://github.com/waterada/chrome-ex-template/*",
+    "storage"
+  ]
+}
